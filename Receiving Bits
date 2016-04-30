@@ -1,0 +1,18 @@
+int led = 13;
+void setup(){
+  Serial.begin(1200);
+  while(!Serial){
+  }
+  pinMode(led, INPUT);
+}
+char c;
+void loop(){
+/*if (Serial.available()>0){
+c = Serial.read();
+Serial.print(c);
+}*/
+int a = digitalRead(13);
+Serial.println(a);
+ // int incoming_bit = digitalRe          vcad(led);
+//  Serial.print(incoming_bit);  
+}
