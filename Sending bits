@@ -1,0 +1,10 @@
+void setup(){
+  int led = 13;
+  Serial.begin(1200);
+  pinMode(led, OUTPUT);
+}
+
+void loop(){
+  Serial.print("A"); // Send the TX output to LED
+  delay(20);
+}
